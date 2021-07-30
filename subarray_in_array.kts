@@ -41,4 +41,9 @@ println(hasIncluded(intArrayOf(1, 2, 3, 5, 7, 9, 11), intArrayOf(3, 5, 7))) //tr
 println(hasIncluded(intArrayOf(1, 2, 3, 5, 7, 9, 11), intArrayOf(9,11))) //true
 println(hasIncluded(intArrayOf(1, 2, 3, 5, 7, 9, 11), intArrayOf(1,2))) //true
 println(hasIncluded(intArrayOf(1, 2, 3, 5, 7, 9, 11), intArrayOf(1))) //true
+println(hasIncluded(intArrayOf(1, 2, 3, 3, 3, 5, 7, 9, 11), intArrayOf(3, 3, 5, 7))) //true !!! this is the problem!
 println(hasIncluded(intArrayOf(1, 2, 3, 5, 7, 9, 11), intArrayOf(4, 5, 7))) //false
+
+/*
+feedback: hasIncluded(intArrayOf(1, 2, 3, 3, 3, 5, 7, 9, 11), intArrayOf(3, 3, 5, 7)) давет false, должно быть true.
+ */
